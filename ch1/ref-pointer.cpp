@@ -5,6 +5,8 @@ int main()
 {
   int x = 5;
   int& refTox = x;
+  // invalid, references doesn't support indirection
+  //int&& refTorefTox = refTox;
   int* ptrTox = &x;
 
   std::cout << x << "\n";
